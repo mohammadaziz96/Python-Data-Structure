@@ -14,14 +14,13 @@ class Tree:
             node.right=self.insert(node.right, data)
         else:
             node.left=self.insert(node.left, data)
-        return Node
+        return node
 t=Tree()
-root=t.CreateNode(10)
+root=t.CreateNode(int(input("Enter root node: ")))
 print(root.data)
 print(type(root.data))
-print("Enter 5 element on each input")
-t.insert(root, int(input("Enter element: ")))
-t.insert(root, int(input("Enter element: ")))
-t.insert(root, int(input("Enter element: ")))
-t.insert(root, int(input("Enter element: ")))
-t.insert(root, int(input("Enter element: ")))
+t.insert(root, int(input("Enter element to insert: ")))
+t.insert(root, int(input("Enter element to insert: ")))
+t.insert(root, int(input("Enter element to insert: ")))
+t.insert(root, int(input("Enter element to insert: ")))
+t.insert(root, int(input("Enter element to insert: ")))
